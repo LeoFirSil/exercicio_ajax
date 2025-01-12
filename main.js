@@ -20,4 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             followingElement.innerText = json.following;
             linkElement.href = json.html_url;
         })
+
+        .catch(function(erro) {
+            alert("Ocorreu um erro, tente novamente mais tarde.")
+        })
 })
